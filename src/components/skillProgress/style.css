@@ -1,0 +1,27 @@
+.skillProgresWrapper {
+  display: flex;
+}
+
+.skillProgresTitle {
+  margin-right: 5px;
+  width: 100px;
+  text-align: end;
+}
+
+.progresWrapper {
+  width: 100px;
+  background-color: #f4f4f4;
+  height: 1em;
+  border: 2px solid #2d696a;
+}
+
+.currentProgress {
+  height: calc(100% - 2px);
+  width: 50%;
+  margin: 1px;
+}
+
+.progresState {
+  margin-left: 5px;
+  color: #fff;
+}
