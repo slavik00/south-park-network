@@ -1,12 +1,13 @@
 header {
   display: flex;
-  width: 100%;
+  width: calc(100% - 120px);
   background-color: #3e7f85;
   min-height: 80px;
   padding: 0 60px;
   font-weight: bold;
   justify-content: space-between;
   flex-wrap: wrap;
+  box-shadow: 0 4px 6px -1px gray;
 }
 
 .headerSkils {

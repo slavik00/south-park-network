@@ -1,0 +1,84 @@
+.userBar_Wrapper {
+  width: 20%;
+  min-width: 240px;
+  border: 2px solid #9fa3a3;
+}
+
+.userBar_ImgWrapper {
+  margin: 5px;
+  border: 2px solid #9fa3a3;
+
+}
+
+.userBar_ImgWrapper > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.userBar_aboutMy {
+  border-top: 2px solid #9fa3a3;
+  padding: 4px;
+}
+
+.aboutMy_title, .aboutMy_description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutMy_title {
+  color: #3c7c81;
+  font-weight: 900;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.aboutMy_title:first-child {
+  margin-top: 0;
+}
+
+
+.aboutMy_description {
+  font-weight: bold;
+}
+
+.friends_title {
+  background-color: #3c7c81;
+  padding: 0 5px;
+}
+
+.friends_count {
+  font-size: 2em;
+  color: #ffc900;
+  font-weight: 900;
+}
+
+/*  */
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondFont {
+  color: #3c7c81;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.marginTop5 {
+  margin-top: 5px;
+}
+
+.strongFont {
+  font-weight: 900;
+}
+
+.whiteStrongText {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.selfAlignCenter {
+  align-self: center;
+}

@@ -1,25 +1,35 @@
 import React from 'react';
 import './style.css'
 
-const SkillProgres = ({title='', color='red', maxValue, currentValue}) => {
+const SkillProgres = (props) => {
+  const { 
+    title='', 
+    color='red', 
+    maxValue, 
+    currentValue, 
+    border='2px solid #2d696a',
+    showText=true,
+  } = props
   const currentProcent = (currentValue/maxValue )*100;
 	return (
 		<div className="skillProgresWrapper">
       <p className="skillProgresTitle">
         {title.toUpperCase()}
       </p>
-      <div className="progresWrapper">
+      <div className="progresWrapper" style={{border}} >
         <div 
           className="currentProgress" 
           style={{
             backgroundColor: color, 
-            width: `calc(${currentProcent}% - 2px)` 
+            width: `calc(${currentProcent}% - 2px)`
             }} 
           />
       </div>
-      <p className="progresState">
-        {`${currentValue}/${maxValue}`}
-      </p>
+      { showText ?       
+        <p className="progresState">
+          {`${currentValue}/${maxValue}`}
+        </p> : null
+      }
 		</div>	
 	)
 }

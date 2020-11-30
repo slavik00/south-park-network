@@ -6,6 +6,7 @@
   margin-right: 5px;
   width: 100px;
   text-align: end;
+  align-self: flex-end;
 }
 
 .progresWrapper {
