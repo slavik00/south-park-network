@@ -1,0 +1,25 @@
+.menuBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.menuBar > li {
+  padding: 9px 30px;
+  border: 2px solid #9fa3a3;
+  margin-right: 2px;
+  color: #3c7c81;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menuBar > li:last-child {
+  margin-right: 0;
+}
+
+.activePage {
+  color: black;
+  border: 3px solid #3c7c81 !important;
+  border-bottom: none !important;
+  background-color: white;
+}

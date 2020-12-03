@@ -2,13 +2,15 @@ import React from 'react';
 import './style.css'
 import SkillProgress from '../skillProgress/'
 import AppLogo from '../../assert/images/ava.png'
+import BatersImg from '../../assert/images/baters.png'
+import TvickImg from '../../assert/images/tvick.png'
 
 const UserBar = () => {
 
 	return (
 		<div className="userBar_Wrapper">
 			<div className="userBar_ImgWrapper">
-				<img src={AppLogo} />
+				<img src={AppLogo} alt="logo" />
 			</div>
 			<div className="userBar_aboutMy">
 				<div className="aboutMy_title">
@@ -51,8 +53,13 @@ const UserBar = () => {
 					<p className="whiteStrongText selfAlignCenter">Friends</p>
 					<p className="friends_count">28</p>
 				</div>
-				<ul>
-					<li><img /></li>
+				<ul className="friends_list">
+				<li className="friend_item"><img src={TvickImg} alt="Rendy" /></li>
+					<li className="friend_item"><img src={BatersImg} alt="Rendy" /></li>
+					<li className="friend_item"><img src={TvickImg} alt="Tvick" /></li>
+					<li className="friend_item"><img src={TvickImg} alt="Rendy" /></li>
+					<li className="friend_item"><img src={TvickImg} alt="Rendy" /></li>
+					<li className="friend_item"><img src={TvickImg} alt="Tvick" /></li>
 				</ul>	
 			</div>
 		</div>
