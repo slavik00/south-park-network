@@ -27,7 +27,7 @@ const UserBar = () => {
 				</div>
 				<div className="spaceBetween aboutMy_description">
 					<p>8</p>
-					<SkillProgress maxValue={3200} currentValue={3089} color="#3c7c81" border='1px solid #9fa3a3' showText={false} />
+					<SkillProgress maxValue={3200} currentValue={3089} color="#3c7c81" border='1px solid #9fa3a3' showText={false} noFlex />
 				</div>				
 				<div className="aboutMy_title">
 					<p>Relationship Status</p>

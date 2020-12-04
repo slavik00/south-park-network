@@ -4,28 +4,27 @@ import { getPathName } from '../../../helpers'
 import './style.css'
 
 const pages = [
-  "Home",
-  "Inventory",
-  "Abilities",
-  "Quests",
-  "Maps",
-  "Collectables",
-  "Party"
+  {title: "Home", path: '/'},
+  {title: "Inventory", path: '/inventory'},
+  {title: "Abilities", path: '/abilities'},
+  {title: "Quests", path: '/quests'},
+  {title: "Maps", path: '/maps'},
+  {title: "Collectables", path: '/collectables'},
+  {title: "Party", path: '/party'}
 ]
 
 const MenuBar = (props) => {
   const changePage = (page) => props.history.push(page)
-	const pathname = getPathName(props.location).replace('/', '')
-
+	const pathname = getPathName(props.location)
 	return (
 		<ul className="menuBar">
       {
-        pages.map(page => 
+        pages.map(({title, path}) => 
         <li 
-          className={pathname === page.toLowerCase() ? 'activePage' : null } 
-          onClick={() => changePage(page.toLowerCase())} >
-          { page }  
-        </li>  
+          className={pathname === path ? 'activePage' : null } 
+          onClick={() => changePage(path)} >
+          { title }  
+        </li>
         )
       }
 		</ul>

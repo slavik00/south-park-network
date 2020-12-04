@@ -3,18 +3,30 @@ import './style.css'
 import SideBar from '../../components/sideBar'
 import UserBar from "../../components/userBar"
 import { withRouter } from 'react-router-dom'
-import {  getPathName } from '../../helpers'
+import Home from '../home/'
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
+
 const SiteContent = (props) => {
-	const pathname = getPathName(props.location).replace('/','')
 	return (
 		<main>
 			<div className="ribbon" />
 				<div className="siteContentWrapper">
 					<UserBar />
-						<div style={{display: 'flex', flexDirection: 'column', width: '100%'}} >
+						<div className="siteContentMain">
 							<SideBar />
-							<div>
-								{pathname}
+							<div className="siteContent">
+								<div className="scrossLine" />
+								<Switch>
+									<Route exact path="/">
+										<Home />
+									</Route>
+									<Route exact path="/inventory">
+										iNVENTTORY
+									</Route>
+								</Switch>
 							</div>
 						</div>	
 				</div>

@@ -1,13 +1,12 @@
 .userBar_Wrapper {
   width: 20%;
-  min-width: 240px;
+  min-width: 210px;
   border: 2px solid #9fa3a3;
 }
 
 .userBar_ImgWrapper {
   margin: 5px;
   border: 2px solid #9fa3a3;
-
 }
 
 .userBar_ImgWrapper > img {

@@ -9,10 +9,11 @@ const SkillProgres = (props) => {
     currentValue, 
     border='2px solid #2d696a',
     showText=true,
+    noFlex=false,
   } = props
   const currentProcent = (currentValue/maxValue )*100;
 	return (
-		<div className="skillProgresWrapper">
+		<div className={`skillProgresWrapper ${noFlex ? 'noFlex' : null}` }>
       <p className="skillProgresTitle">
         {title.toUpperCase()}
       </p>
