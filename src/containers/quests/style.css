@@ -1,0 +1,93 @@
+.dis_flex {
+  display: flex;
+}
+
+.marg_r_10 {
+  margin-right: 10px;
+}
+
+.height_100 {
+  height: 100%;
+}
+
+.questsWrapper {
+}
+
+.leftBlock  {
+  width: 50%;
+  padding: 10px;
+  height: calc(100% - 20px);
+}
+
+.rightBlock {
+  width: 50%;
+  background-color: red;
+  height: 100%;
+}
+
+.questsHeader_box{
+  width: 50px;
+  background-color: var(--grey-color);
+  margin: 2px 5px;
+}
+
+.questsHeader_button {
+  width: 150px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #bec3c3;
+  color: #5090a0;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.questsHeader_button_active {
+  border: 1px solid var(--border-color);
+  color: var(--strong-color);
+  background-color: white;
+}
+
+.questsHeader_button:hover {
+  background-color: #d3d6d6;
+  border: 2px solid var(--primary-color)
+}
+.questsHeader_button_active:hover {
+  border: 1px solid var(--border-color);
+  background-color: white;
+}
+
+.questsList {
+  margin-top: 5px;
+}
+
+.questItem {
+  border: 3px solid var(--primary-color);
+  padding: 3px;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.questItem > div > p {
+  align-self: center;
+  margin-left: 10px;
+  color: var(--strong-color);
+  font-weight: 900;
+}
+
+.imgWrapper > img {
+  width: 35px;
+  height: 35px;
+}
+
+.emptyQuestItem {
+  background-color: #e2e2e2;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 10px;
+}
+
+.exclamationPoint {
+  color:  var(--strong-color);
+}

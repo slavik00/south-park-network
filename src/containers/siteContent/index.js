@@ -4,6 +4,7 @@ import SideBar from '../../components/sideBar'
 import UserBar from "../../components/userBar"
 import { withRouter } from 'react-router-dom'
 import Home from '../home/'
+import Quests from '../quests/'
 import {
   Switch,
   Route,
@@ -25,6 +26,9 @@ const SiteContent = (props) => {
 									</Route>
 									<Route exact path="/inventory">
 										iNVENTTORY
+									</Route>
+									<Route exact path="/quests">
+										<Quests />
 									</Route>
 								</Switch>
 							</div>
