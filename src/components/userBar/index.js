@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import './UserBar.style.css'
 import SkillProgress from '../skillProgress/'
 import AppLogo from '../../assert/images/ava.png'
 import BatersImg from '../../assert/images/baters.png'

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import QuestImg from '../../assert/images/quest.png'
 import './style.css'
 import ExclamationPoint from '../../assert/images/exclamationPoint.svg'
+import Quest from './quest/'
 
 const quests = [{
 	img: QuestImg,
@@ -34,16 +35,12 @@ const Quests = (props) => {
 				<>
 					{
 						quests.map(({img, text}) => 
-							<li className="questItem dis_flex">
+							<li key={text} className="questItem dis_flex">
 								<div className="dis_flex">
 									<div className="imgWrapper">
 										<img src={img} alt="quest"/>
 									</div>
-									<p>
-										{
-											text
-										}
-									</p>
+									<p>{ text }</p>
 								</div>
 								<div className="imgWrapper">
 									<img className="exclamationPoint" src={ExclamationPoint} alt="quest"/>
@@ -65,7 +62,7 @@ const Quests = (props) => {
 				</ul>
 			</div>
 			<div className="rightBlock">
-
+				<Quest />
 			</div>
 		</div>	
 	)

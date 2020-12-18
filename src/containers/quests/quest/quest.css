@@ -1,0 +1,49 @@
+.questWrapper {
+  margin: 49px 20px;
+}
+
+.questHeader {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  border: 2px solid var(--grey-color);
+}
+
+.questDescription {
+  align-self: center;
+}
+
+.questBody {
+
+}
+
+.questBodyTile {
+  align-items: center;
+  font-weight: 800;
+  color: var(--primary-color);
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.subQuestItem{
+  display: flex;
+  padding: 10px 5px;
+  background-color: var(--grey-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.subQuestItem:last-child{
+  margin-bottom: 0;
+}
+
+
+.subQuestItem > object {
+  width: 35px;
+  height: 35px !important;
+  margin-right: 5px;
+}
+
+.subQuestItem > p {
+  text-align: left;
+}

@@ -20,7 +20,8 @@ const MenuBar = (props) => {
 		<ul className="menuBar">
       {
         pages.map(({title, path}) => 
-        <li 
+        <li
+          key={title}
           className={pathname === path ? 'activePage' : null } 
           onClick={() => changePage(path)} >
           { title }  

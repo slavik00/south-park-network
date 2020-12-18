@@ -19,6 +19,11 @@
   padding: 4px;
 }
 
+.aboutMy_description > p {
+  margin-top: 3px;
+  font-size: 17px;
+}
+
 .aboutMy_title, .aboutMy_description {
   display: flex;
   justify-content: space-between;
@@ -27,7 +32,7 @@
 .aboutMy_title {
   color: #3c7c81;
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 18px;
   margin-top: 5px;
 }
 
@@ -90,13 +95,18 @@
   grid-row-gap: 5px;
 }
 
-.friend_item {
-
-}
-
-
 .friend_item > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 1200px) {
+  .userBar_Wrapper {
+    display: none;
+  }
+
+  .menuBar > li {
+    padding: 5px 20px;
+  }
+} 

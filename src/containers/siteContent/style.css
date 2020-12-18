@@ -1,4 +1,6 @@
 main {
+  display: flex;
+  justify-content: center;
   position: relative;
   width: 100%;
   height: calc(100% - 110px);
@@ -15,8 +17,9 @@ main {
 
 .siteContentWrapper {
   display: flex;
-  margin: 0 50px;
+  margin: 0 30px;
   padding-top: 5px;
+  max-width: 1500px;
 }
 
 .siteContentMain {
@@ -36,7 +39,19 @@ main {
 .scrossLine {
   position: absolute;
   top: -2px;
-  width: 100%;
+  left: -2px;
+  width: calc(100% + 4px); 
   height: 2px;
   background-color: var(--primary-color);
 }
+
+
+@media (max-width: 1200px) {
+  .siteContent {
+    border-left: 2px solid var(--primary-color);
+  }
+
+  .siteContentWrapper {
+    width: 100%;
+  }
+} 
