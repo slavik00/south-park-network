@@ -1,5 +1,5 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
+import React from 'react'
+import { withRouter } from 'react-router-dom'
 import { getPathName } from '../../../helpers'
 import './style.css'
 
@@ -15,7 +15,11 @@ const pages = [
 
 const MenuBar = (props) => {
   const changePage = (page) => props.history.push(page)
-	const pathname = getPathName(props.location)
+  const pathname = getPathName(props.location)
+  
+  const width = window.screen
+  console.log(width) 
+
 	return (
 		<ul className="menuBar">
       {

@@ -8,8 +8,8 @@
 }
 
 .commentWrapper {
-  max-height: 100px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 110px 1fr;
   background-color: var(--grey-color);
   padding: 3px;
   margin-bottom: 5px;
@@ -22,6 +22,9 @@
   border: 2px solid var(--primary-color);
 }
 
+.commentWrapper > .imageWrapper {
+  max-height: 110px;
+}
 
 .imageWrapper {
   margin-right: 5px;
@@ -33,10 +36,6 @@
   height: 100%;
 }
 
-
-.commentBody {
-
-}
 
 .commentName {
   text-align: start;

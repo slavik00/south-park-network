@@ -27,8 +27,8 @@ const Home = (props) => {
 		<div className="homeWrapper">
       <ul className="home_list">
         {
-          comments.map(({ img, name, text }) => 
-          <li className="commentWrapper">
+          comments.map(({ img, name, text }, index) => 
+          <li key={index} className="commentWrapper">
             <div className="imageWrapper">
               <img src={img} alt={name} />
             </div>
