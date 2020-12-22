@@ -14,15 +14,15 @@ const resizeEvent = () => {
 
   const handleResize = ({ target }) => {
     const { innerWidth, innerHeight } = target
-
+    console.log(innerWidth, innerHeight)
   }
   
   window.addEventListener('resize', handleResize) 
   return () => window.removeEventListener('resize', handleResize)
 }
 
-const App = ({}) => {
-  console.log(appActions)
+const App = (props) => {
+  console.log(props)
   useEffect(resizeEvent, [])
 
   return (

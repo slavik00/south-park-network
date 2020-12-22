@@ -1,3 +1,4 @@
+import AppActions from '../actions/appActions'
 
 const initialState = {
   height: window.screen.height,
@@ -5,8 +6,14 @@ const initialState = {
 }
 
 export default function appReducer(state = initialState, action) {
-  switch (action.type) {
-
+  const { type, payload } = action
+  switch (type) {
+    case AppActions.SIZE_CHANGE: 
+      return {
+        height: payload.height,
+        width: payload.width,
+        ...state
+      }
 
     default:
       return state
