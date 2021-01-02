@@ -18,7 +18,6 @@ const MenuBar = (props) => {
   const pathname = getPathName(props.location)
   
   const width = window.screen
-  console.log(width) 
 
 	return (
 		<ul className="menuBar">

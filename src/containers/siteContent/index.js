@@ -5,36 +5,40 @@ import UserBar from "../../components/userBar"
 import { withRouter } from 'react-router-dom'
 import Home from '../home/'
 import Quests from '../quests/'
+import Map from '../map/'
 import {
-  Switch,
-  Route,
+	Switch,
+	Route,
 } from "react-router-dom";
 
 const SiteContent = (props) => {
 	return (
 		<main>
 			<div className="ribbon" />
-				<div className="siteContentWrapper">
-					<UserBar />
-						<div className="siteContentMain">
-							<SideBar />
-							<div className="siteContent">
-								<div className="scrossLine" />
-								<Switch>
-									<Route exact path="/">
-										<Home />
+			<div className="siteContentWrapper">
+				<UserBar />
+				<div className="siteContentMain">
+					<SideBar />
+					<div className="siteContent">
+						<div className="scrossLine" />
+						<Switch>
+							<Route exact path="/">
+								<Home />
+							</Route>
+							<Route exact path="/inventory">
+								iNVENTTORY
 									</Route>
-									<Route exact path="/inventory">
-										iNVENTTORY
-									</Route>
-									<Route exact path="/quests">
-										<Quests />
-									</Route>
-								</Switch>
-							</div>
-						</div>	
+							<Route exact path="/quests">
+								<Quests />
+							</Route>
+              <Route exact path="/maps">
+								<Map />
+							</Route>
+						</Switch>
+					</div>
 				</div>
-		</main>	
+			</div>
+		</main>
 	)
 }
 

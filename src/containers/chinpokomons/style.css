@@ -1,0 +1,49 @@
+.homeWrapper {
+  padding: 5px;
+}
+
+.home_list {
+  border: 2px solid var(--border-color);
+  padding: 0 3px;
+}
+
+.commentWrapper {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  background-color: var(--grey-color);
+  padding: 3px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.commentWrapper:hover {
+  background-color: white;
+  border: 2px solid var(--primary-color);
+}
+
+.commentWrapper > .imageWrapper {
+  max-height: 110px;
+}
+
+.imageWrapper {
+  margin-right: 5px;
+}
+
+.imageWrapper > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.commentName {
+  text-align: start;
+  color: #052c39;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.commentText {
+  text-align: justify; 
+}
