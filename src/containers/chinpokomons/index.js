@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './style.css'
 
 
@@ -6,7 +6,7 @@ const Chinpocomons = (props) => {
 
   const list = [
     {
-      img: 'https://static.wikia.nocookie.net/spsot/images/f/ff/Ic_unlock_cpm_roiderat.png/revision/latest/scale-to-width-down/128?cb=20150112020605',
+      img: 'https://static.wikia.nocookie.net/spsot/images/f  /ff/Ic_unlock_cpm_roiderat.png/revision/latest/scale-to-width-down/128?cb=20150112020605',
       name: 'Roidrat'
     },
     {
@@ -127,14 +127,19 @@ const Chinpocomons = (props) => {
     },
   ]
 
-	return (
-		<div className="homeWrapper">
-      <button >Get new DOG</button>
-      <div style={{width:200, height:350}}>
-        <img style={{objectFit: 'cover'}} src={''} alt="dog" />
+  return (
+    <div className="commonWraperr">
+      <div className="listWrapper">
       </div>
-		</div>	
-	)
+      <div className="selectWrapper">
+          <p className="questBodyTile" >fykguhirjoeifwhuigyuweh</p>
+          <div className="chikimonWrapper">
+          <img src={list[0].img}  alt='chinpokomon'>
+          </img>
+          </div>
+        </div>
+    </div>
+  )
 }
 
-export default Map
+export default Chinpocomons

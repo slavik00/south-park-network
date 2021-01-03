@@ -10,6 +10,7 @@ import {
 	Switch,
 	Route,
 } from "react-router-dom";
+import Collactables from '../chinpokomons/'
 
 const SiteContent = (props) => {
 	return (
@@ -33,6 +34,9 @@ const SiteContent = (props) => {
 							</Route>
               <Route exact path="/maps">
 								<Map />
+							</Route>
+							<Route exact path="/collectables">
+								<Collactables />
 							</Route>
 						</Switch>
 					</div>
