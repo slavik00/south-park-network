@@ -9,12 +9,12 @@ import Map from '../map/'
 import {
 	Switch,
 	Route,
-} from "react-router-dom";
-import Collactables from '../chinpokomons/'
+} from "react-router-dom"
+import Collactables from '../collections/'
 
 const SiteContent = (props) => {
 	return (
-		<main>
+		<main >
 			<div className="ribbon" />
 			<div className="siteContentWrapper">
 				<UserBar />

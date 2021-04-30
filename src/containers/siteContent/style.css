@@ -33,6 +33,8 @@ main {
   background-color: white;
   border-right: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
+  border-left: 2px solid var(--primary-color);
+  left: -2px;
   height: 100%;
 }
 

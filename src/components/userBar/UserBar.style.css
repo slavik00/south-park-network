@@ -1,6 +1,8 @@
 .userBar_Wrapper {
+  z-index: 2;
   width: 20%;
   min-width: 210px;
+  height: fit-content;
   border: 2px solid #9fa3a3;
 }
 

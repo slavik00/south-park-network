@@ -1,8 +1,13 @@
-import React from 'react'
-import './style.css'
+import React, { useState } from 'react'
+import CollectablesWrapper from './styles'
 
 
-const Chinpocomons = (props) => {
+const Collections = (props) => {
+  const [collection, setCollection] = useState(null);
+
+  const collectionsList = [
+    'Friends', 'Chinpokomon', 'Equipment', 'Quest'
+  ]
 
   const list = [
     {
@@ -127,19 +132,53 @@ const Chinpocomons = (props) => {
     },
   ]
 
+  const selectColection = ({target: {outerText}}) => {
+    setCollection(outerText)
+  }
+      
   return (
-    <div className="commonWraperr">
-      <div className="listWrapper">
+    <CollectablesWrapper >
+      <div className="collectablesHeader">
+        <ul className="colectionList">
+          {
+            collectionsList.map(item => (<li 
+              key={item}
+              className={`collectionItem ${item === collection ? 'selected' : ''}`}
+              onClick={selectColection}
+            >
+              {item}
+            </li>))
+          }
+        </ul>
+        <div className="total">
+          30/30
+        </div>
       </div>
-      <div className="selectWrapper">
-          <p className="questBodyTile" >fykguhirjoeifwhuigyuweh</p>
-          <div className="chikimonWrapper">
-          <img src={list[0].img}  alt='chinpokomon'>
-          </img>
+      <div className="collectableContent">
+        <div className="listWrapper">
+          <div className="list">
+          {
+            list.map(item => (<li
+              className='listItem'
+              key={item.name}
+            >
+              <img src={item.img} alt={item.name}/>
+            </li>
+              )
+            )
+          }
           </div>
         </div>
-    </div>
+        <div className="selectWrapper">
+          <h2 className="selectTitle" >fykguhirjoeifwhuigyuweh</h2>
+          <div className="selectContant">
+            <img src={list[0].img}  alt={list[0].name}>
+            </img>
+          </div>
+        </div>
+      </div>
+    </CollectablesWrapper>
   )
 }
 
-export default Chinpocomons
+export default Collections

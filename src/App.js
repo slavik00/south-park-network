@@ -14,6 +14,8 @@ const resizeEvent = () => {
 
   const handleResize = ({ target }) => {
     const { innerWidth, innerHeight } = target
+
+    console.log(innerWidth, innerHeight)
   }
   
   window.addEventListener('resize', handleResize) 
